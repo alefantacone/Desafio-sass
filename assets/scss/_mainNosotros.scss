@@ -1,0 +1,17 @@
+.main{
+    grid-area: main;
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        .parrafoNosotros{
+            width: 50%;
+            font-size: 18px;
+            padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .imagenNosotros{
+            width: 50%;
+            padding: 20px
+        }
+    }
+}

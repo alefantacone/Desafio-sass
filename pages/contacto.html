@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="container">
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./ubicacion.html">Ubicacion</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav> 
+
+    <header class="header">
+        <h2 class="subtitulo">CONTACTO</h2> 
+    </header>
+
+    <main class="main">
+               
+        <h3 class="h3Contacto">Dejanos tu mensaje</h3>
+        <div class="contacto">
+            <form class="formContacto" action="contactos.php" method="post">
+                <input class="nombreContacto" type="text" name="nombre" placeholder="Ingrese su nombre" required>                                
+                <input class="emailContacto"  type="email" name="mail" placeholder="Ingrese su mail" required>
+                <input class="asuntoContacto" type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+                <textarea class="mensajeContacto" name="mensaje" id="mensaje" cols="30" rows="10">Dejanos tu mensaje</textarea>                                 
+                <input class="btnContacto" type="submit" value="Enviar">
+            </form>
+        
+        <h3 class="h3Informacion">Informacion</h3>
+            <div class="informacion">
+                <p class="informacionLlamadas">Llamadas: (+549) 381-2320984</p>
+                <p class="informacionWhatsapp">Whatsapp: (+549) 381-2538947</p>
+                <p class="informacionEmail">E-mail: agrojas.sas@gmail.com</p>
+            </div> 
+        </div>                  
+    </main>
+
+    <aside>
+  
+    </aside>
+
+    <footer class="footer">
+        <h5>©Agrojas, todos los derechos reservados</h5>
+    </footer> 
+</body>
+</html>

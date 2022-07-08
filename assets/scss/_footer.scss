@@ -1,0 +1,11 @@
+.footer{
+    grid-area: footer;
+    background-color: #017A1C;    
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    h5{
+        font-size: 25px;
+        color: white;
+    }
+}

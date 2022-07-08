@@ -1,0 +1,38 @@
+.main{
+    grid-area: main;
+    
+    .ubicacionLocal{
+        width: 100%;
+        .h3Local{
+            padding: 0px 0px 5px 10px;
+            font-size: 25px;
+            text-decoration: underline;
+            color: #017A1C;
+        }
+        .parrafoLocal{
+            padding: 5px 0px 5px 15px;
+            font-size: 18px ;
+        }
+        .mapaLocal{
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+    .ubicacionFabrica{
+       width: 100%;
+       .h3Fabrica{
+        padding: 20px 0px 5px 10px;
+        font-size: 25px;
+        text-decoration: underline;
+        color: #017A1C;
+    }
+        .parrafoFabrica{
+        padding: 5px 0px 5px 15px;
+        font-size: 18px ;
+    }
+    .mapaFabrica{
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+    }
+    }
+}

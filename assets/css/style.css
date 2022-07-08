@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto auto 80px;
+  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main   main   main   main" "footer footer footer footer";
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #017A1C;
+  display: flex;
+  justify-content: end;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  padding: 30px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.main {
+  grid-area: main;
+}
+.main .img {
+  width: 100%;
+}
+
+.main {
+  grid-area: main;
+}
+.main .nosotros {
+  display: flex;
+  flex-direction: row;
+}
+.main .nosotros .parrafoNosotros {
+  width: 50%;
+  font-size: 18px;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main .nosotros .imagenNosotros {
+  width: 50%;
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+}
+
+.divProductos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.divProductos .azucarProductos {
+  width: 50%;
+  padding: 0px 10px 0px 10px;
+}
+.divProductos .azucarProductos .h3Productos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #017A1C;
+}
+.divProductos .azucarProductos .imagenProductos {
+  width: 100%;
+}
+.divProductos .maizProductos {
+  width: 50%;
+  padding: 0px 10px 0px 10px;
+}
+.divProductos .maizProductos .h3Productos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #017A1C;
+}
+.divProductos .maizProductos .imagenProductos {
+  width: 100%;
+}
+.divProductos .alimentoProductos {
+  width: 50%;
+  padding: 0px 10px 0px 10px;
+}
+.divProductos .alimentoProductos .h3Productos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #017A1C;
+}
+.divProductos .alimentoProductos .imagenProductos {
+  width: 100%;
+}
+.divProductos .snacksProductos {
+  width: 50%;
+  padding: 0px 10px 0px 10px;
+}
+.divProductos .snacksProductos .h3Productos {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #017A1C;
+}
+.divProductos .snacksProductos .imagenProductos {
+  width: 100%;
+}
+
+.main {
+  grid-area: main;
+}
+.main .h3Contacto {
+  font-size: 25px;
+  padding: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: #017A1C;
+}
+.main .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .formContacto {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 0px 15px 0px;
+  border-radius: 15px;
+  border-color: #017A1C;
+  display: flex;
+  flex-direction: column;
+  background-color: #017A1C;
+}
+.main .formContacto .nombreContacto {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin: 0px 100px 5px 100px;
+}
+.main .formContacto .emailContacto {
+  padding: 5px;
+  margin: 5px 100px 5px 100px;
+}
+.main .formContacto .asuntoContacto {
+  padding: 5px;
+  margin: 5px 100px 5px 100px;
+}
+.main .formContacto .mensajeContacto {
+  font-size: 15px;
+  margin: 5px 100px 5px 100px;
+}
+.main .formContacto .btnContacto {
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 0px 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: gray;
+}
+.main .h3Informacion {
+  font-size: 25px;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: #017A1C;
+}
+.main .informacion {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #017A1C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.main {
+  grid-area: main;
+}
+.main .ubicacionLocal {
+  width: 100%;
+}
+.main .ubicacionLocal .h3Local {
+  padding: 0px 0px 5px 10px;
+  font-size: 25px;
+  text-decoration: underline;
+  color: #017A1C;
+}
+.main .ubicacionLocal .parrafoLocal {
+  padding: 5px 0px 5px 15px;
+  font-size: 18px;
+}
+.main .ubicacionLocal .mapaLocal {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+.main .ubicacionFabrica {
+  width: 100%;
+}
+.main .ubicacionFabrica .h3Fabrica {
+  padding: 20px 0px 5px 10px;
+  font-size: 25px;
+  text-decoration: underline;
+  color: #017A1C;
+}
+.main .ubicacionFabrica .parrafoFabrica {
+  padding: 5px 0px 5px 15px;
+  font-size: 18px;
+}
+.main .ubicacionFabrica .mapaFabrica {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #017A1C;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.footer h5 {
+  font-size: 25px;
+  color: white;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #017A1C;
+  display: flex;
+  padding: 10px;
+  font-family: "Caveat";
+  font-size: 50px;
+}
+
+.subtitulo {
+  font-size: 60px;
+  padding: 40px 0px 40px 0px;
+  font-family: "Bebas Neue";
+}
+
+@media (max-width: 768px) {
+  .navbar ul li {
+    padding: 8px;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  .subtitulo {
+    font-size: 45px;
+  }
+
+  .divProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h3Productos {
+    font-size: 25px;
+  }
+
+  .azucarProductos {
+    width: 100%;
+  }
+
+  .maizProductos {
+    width: 100%;
+  }
+
+  .alimentoProductos {
+    width: 100%;
+  }
+
+  .snacksProductos {
+    width: 100%;
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parrafoNosotros {
+    width: 100%;
+  }
+
+  .imagenNosotros {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar ul li {
+    padding: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  .divProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h3Productos {
+    font-size: 20px;
+    padding: 30px 0px;
+  }
+
+  .azucarProductos {
+    width: 100%;
+  }
+
+  .maizProductos {
+    width: 100%;
+  }
+
+  .alimentoProductos {
+    width: 100%;
+  }
+
+  .snacksProductos {
+    width: 100%;
+  }
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parrafoNosotros {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .imagenNosotros {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .formContacto {
+    width: 360px;
+  }
+
+  .btnContacto {
+    margin: 0px 50px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px auto auto 40px;
+    grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main   main   main   main" "footer footer footer footer";
+  }
+
+  .navbar ul li a {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+}
